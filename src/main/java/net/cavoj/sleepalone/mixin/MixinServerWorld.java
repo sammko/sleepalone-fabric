@@ -1,5 +1,6 @@
 package net.cavoj.sleepalone.mixin;
 
+import net.cavoj.sleepalone.SleepAloneMod;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.profiler.Profiler;
@@ -60,6 +61,7 @@ public abstract class MixinServerWorld extends World {
         this.someoneSleeping = false;
         for (ServerPlayerEntity player : this.players) {
             if (!player.isSpectator() && player.isSleeping()) {
+                SleepAloneMod.sendAsleepMessage(player);
                 this.someoneSleeping = true;
                 break;
             }
