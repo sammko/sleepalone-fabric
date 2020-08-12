@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "sleepalone",
+  "version": "${version}",
+  "name": "Sleep Alone",
+  "description": "Skips the night if any player is sleeping.",
+  "authors": [
+    "sammko"
+  ],
+  "contact": {
+    "homepage": "https://github.com/sammko/sleepalone-fabric",
+    "issues": "https://github.com/sammko/sleepalone-fabric/issues",
+    "email": "samuel@cavoj.net"
+  },
+  "environment": "server",
+  "license": "MIT",
+  "mixins": [
+      "sleepalone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  }
+}

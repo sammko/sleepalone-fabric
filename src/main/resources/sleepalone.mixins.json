@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.cavoj.sleepalone.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+      "MixinServerWorld"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
